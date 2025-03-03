@@ -1,61 +1,73 @@
-body {
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
-    margin: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
 }
+
 .container {
-    background: white;
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
     text-align: center;
-    width: 350px;
 }
+
 h2 {
     margin-bottom: 15px;
     color: #333;
 }
+
 input {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
+
 button {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-button:nth-child(3) {
-    background-color: #007BFF;
+
+#signupBtn {
+    background: #6a11cb;
     color: white;
 }
-button:nth-child(4) {
-    background-color: #28a745;
+
+#loginBtn {
+    background: #2575fc;
     color: white;
 }
-button:nth-child(5) {
-    background-color: #DB4437;
-    color: white;
+
+button:hover {
+    opacity: 0.8;
 }
-.logout {
-    background-color: #dc3545;
-    color: white;
-}
-#message {
+
+p {
     margin-top: 10px;
+    font-size: 14px;
     color: red;
-    font-weight: bold;
 }
+
 @media (max-width: 400px) {
     .container {
         width: 90%;
